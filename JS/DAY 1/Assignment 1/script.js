@@ -25,3 +25,33 @@ calcButton.addEventListener("click", () => {
     document.getElementById("scoreResult").innerText += " " + score;
     document.getElementById("Grade").innerText += " " + gradeSum(score)
 });
+
+let showBtn = document.querySelector(".show_btn");
+
+showBtn.addEventListener("click", () => {
+    let num = parseInt(document.getElementById("numberInput").value);
+    let textArea = document.querySelector("#mulTable");
+
+    for (let i = 1; i < 13; i++) {
+        textArea.value += `${num} x ${i} = ${num*i}\n`;
+    }
+});
+
+function checkDrivingAge(age) {
+    let answer;
+    if(age >= 18) {
+        answer = "You can drive.";
+    } else {
+        answer = "You are too young to drive.";
+    }
+    return answer;
+}
+
+let checkBtn = document.querySelector(".check_btn");
+let msgField = document.getElementById("State");
+
+checkBtn.addEventListener("click" , () => {
+    let age = parseInt(document.getElementById("ageInput").value);
+    let msg = checkDrivingAge(age);
+    msgField.innerText = msg;
+});

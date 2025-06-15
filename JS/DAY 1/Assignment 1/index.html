@@ -19,7 +19,8 @@
                     <input id="Name" type="text" placeholder="Enter Your Name!">
                 </div>
 
-                <div class="field"><label for="Score">Score</label>
+                <div class="field">
+                    <label for="scoreInput">Score</label>
                     <input id="scoreInput" type="text" placeholder="Enter Your Score!">
                 </div>
                 <button class="calc_btn" type="button">Calculate Grade</button>
@@ -37,10 +38,14 @@
                 <h2>Simple Multiplication Table</h2>
             </div>
             <div class="body">
-
+                <div class="field">
+                    <label for="numberInput">Number</label>
+                    <input id="numberInput" type="text" placeholder="Enter Number!">
+                </div>
+                <button class="show_btn" type="button">Show Table</button>
             </div>
             <div class="footer">
-                
+                <textarea name="table" id="mulTable" readonly></textarea>
             </div>
         </div>
 
@@ -50,10 +55,14 @@
                 <h2>Age Checker</h2>
             </div>
             <div class="body">
-
+                <div class="field">
+                    <label for="ageInput">Age</label>
+                    <input id="ageInput" type="text" placeholder="Enter Your Age!">
+                </div>
+                <button class="check_btn" type="button">Check</button>
             </div>
             <div class="footer">
-                
+                <h3 id="State"></h3>
             </div>
         </div>
     </div>

@@ -4,8 +4,10 @@ body {
 }
 
 .container {
-    width: 100%;
-    min-height: 100vh;
+    padding: 50px;
+    width: calc(100% - 100px);
+    min-height: calc(100vh - 100px);
+    height: max-content;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -14,24 +16,82 @@ body {
 }
 
 .container .card {
+    min-width: 400px;
     display: flex;
     flex-direction: column;
-    background-color: rgb(0, 157, 255);
-    padding: 10px;
+    justify-content: space-between;
+    background-color: rgb(113, 192, 241);
     border-radius: 20px;
     text-align: center;
 }
 
 .container .card .header {
-
+    border-radius: 20px 0 0 0;
+    background-color: rgb(0, 110, 255);
+    color: white;
 }
 
 .container .card .body {
-     display: flex;
-     flex-direction: column;
-     gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: 150px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.container .card .body input {
+    height: 25px;
+    width: 50%;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    transition: width 0.3s linear;
+}
+
+.container .card .body input:focus {
+    width: calc(50% + 50px);
+    transition: width 0.3s linear;
+}
+
+.container .card .body button {
+    width: 150px;
+    height: 30px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    transition: all 1s linear;
+}
+
+.container .card .body button:hover {
+    background-color: rgb(0, 110, 255);
+    color: white;
+    transition: all 0.1s linear;
 }
 
 .container .card .footer {
+    border-radius: 0 0 20px 0;
+    background-color: rgb(0, 110, 255);
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
 
+#mulTable {
+    color: white;
+    width: 300px;
+    height: 80%;
+    font-size: 20px;
+    background-color: rgb(0, 110, 255);
+    resize: none;
+    border: none;
 }
