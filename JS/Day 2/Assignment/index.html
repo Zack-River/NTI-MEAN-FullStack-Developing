@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2 - Assignment</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>📘 Assignment: Student Grades Organizer</h1>
+    <div class="container">
+        <div class="field">
+            <input id="gradesInput" type="text" placeholder="Enter Grade!">
+            <button type="button" id="addBtn">Add Grade</button>
+        </div>
+        
+        <div class="field">
+            <div class="data">
+                <input id="updatedStudentId" type="text" placeholder="Enter Student ID!">
+                <input id="updatedStudentGrade" type="text" placeholder="Enter Grade!">
+            </div>
+            <button type="button" id="updateBtn">Update</button>
+        </div>
+
+        <textarea name="Grades" id="Grades" readonly></textarea>
+
+        <div class="field">
+            <input id="studentId" type="text" placeholder="Enter Student ID!">
+            <button type="button" id="searchBtn">Search</button>
+        </div>
+
+        <div class="field">
+            <input id="includeGrade" type="text" placeholder="Enter Student Grade!">
+            <button type="button" id="include">Includes</button>
+        </div>
+        
+        <div class="buttons">
+            <button type="button" id="length">Length</button>
+            <button type="button" id="shift">Shift</button>
+            <button type="button" id="clear">Clear</button>
+        </div>
+        <h2 id="status"></h2>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
