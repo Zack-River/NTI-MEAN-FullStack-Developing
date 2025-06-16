@@ -1,3 +1,4 @@
+// Assignment 1 Grades Sum Calc
 function gradeSum (score) {
     let grade;
 
@@ -26,6 +27,8 @@ calcButton.addEventListener("click", () => {
     document.getElementById("Grade").innerText += " " + gradeSum(score)
 });
 
+// Assignment 2 Multiplication Table
+
 let showBtn = document.querySelector(".show_btn");
 
 showBtn.addEventListener("click", () => {
@@ -37,6 +40,8 @@ showBtn.addEventListener("click", () => {
     }
 });
 
+
+// Assignment 3 Age Checker
 function checkDrivingAge(age) {
     let answer;
     if(age >= 18) {
