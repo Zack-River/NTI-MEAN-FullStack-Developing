@@ -129,3 +129,7 @@ clearBtn.addEventListener("click", () => {
 });
 
 console.log(typeof NaN);
+
+
+
+
