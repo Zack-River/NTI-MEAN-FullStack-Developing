@@ -1,0 +1,5 @@
+1- Mongoose instead of native mongoDB.
+2- ODM(Object Data Modeling) => JSON.
+3- ORM "For realtional DBs" => Tables.
+// prisma for all DBs => TypeScript.
+4- 
