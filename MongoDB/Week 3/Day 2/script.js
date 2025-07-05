@@ -67,4 +67,7 @@ async function createUser(name, age, email, role) {
   }
 }
 
+
+// Main App Run
 createUser("newuser2", 18, "abc3@gmail.com", "admin");
+
