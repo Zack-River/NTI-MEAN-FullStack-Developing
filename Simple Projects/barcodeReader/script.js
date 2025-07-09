@@ -7,7 +7,6 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT;
 const db = process.env.MONGO_URI;
-
 // Connect to MongoDB
 mongoose.connect(db, {
     useNewUrlParser: true,
@@ -89,6 +88,41 @@ app.get('/book/:Code' , async (req,res) => {
         Price: book.Price,
         Quantity: book.Quantity
     });
+});
+
+app.put('/book/:Code' , async(req,res) => {
+    const {Code , Name ,Price , Quantity} = req.body
+    const book = await Book.findOne({Code});
+    if (!book) {
+      return res.status(404).json({ message: 'Book not found' });
+    }
+    book.Code = Code;
+    book.Name = Name;
+    book.Price = Price;
+    book.Quantity = Quantity;
+    await book.save();
+
+    res.status(201).json({
+        Code: book.Code,
+        Name: book.Name,
+        Price: book.Price,
+        Quantity: book.Quantity
+    });
+});
+
+app.delete('/book/:Code', async (req, res) => {
+  const { Code } = req.params;
+  const book = await Book.findOne({ Code });
+  if (!book) {
+    return res.status(404).json({ message: 'Book not found' });
+  }
+  await Book.deleteOne({ Code });
+
+  console.log("Book Deleted Successfully");
+
+  res.status(200).json({
+    message: "Book Deleted Successfully"
+  });
 });
 
 // Start server

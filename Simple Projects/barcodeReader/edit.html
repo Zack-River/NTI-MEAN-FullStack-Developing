@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Edit Book</h1>
+        <form class="productInfo">
+            <div class="cell">
+                <label for="pId">Book Id</label>
+                <input type="text" name="Code" class="field" id="pId" placeholder="Id" readonly>
+            </div>
+            <div class="cell">
+                <label for="pName">Book Name</label>
+                <input type="text" name="Name" class="field" id="pName" placeholder="Name">
+            </div>
+            <div class="cell">
+                <label for="pPrice">Book Price</label>
+                <input type="text" name="Price" class="field" id="pPrice" placeholder="Price">
+            </div>
+            <div class="cell">
+                <label for="pQuantity">Book Quantity</label>
+                <input type="text" name="Quantity" class="field" id="pQuantity" placeholder="Quantity">
+            </div>
+            <a href="./home.html" class="backBtn" id="edit">Edit Book</a>
+        </form>
+        <a href="./home.html" class="backBtn">Back</a>
+        
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const code = urlParams.get('code');
+
+    const inputId = document.getElementById('pId');
+    const inputName = document.getElementById('pName');
+    const inputPrice = document.getElementById('pPrice');
+    const inputQuantity = document.getElementById('pQuantity');
+    const editBtn = document.getElementById('edit');
+
+    async function fetchData() {
+        if (!code) {
+            console.error('No book code provided in the URL.');
+            return;
+        }
+
+        try {
+            const response = await fetch(`http://localhost:3000/book/${code}`);
+            if (!response.ok) throw new Error('Failed to fetch data');
+
+            const data = await response.json();
+            inputId.value = data.Code;
+            inputName.value = data.Name;
+            inputPrice.value = data.Price;
+            inputQuantity.value = data.Quantity;
+        } catch (error) {
+            console.error('Error:', error.message);
+        }
+    }
+
+    editBtn.addEventListener('click', async () => {
+        const updatedBook = {
+            Code: inputId.value,
+            Name: inputName.value,
+            Price: inputPrice.value,
+            Quantity: inputQuantity.value
+        };
+
+        try {
+            const response = await fetch(`http://localhost:3000/book/${inputId.value}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(updatedBook)
+            });
+
+            if (!response.ok) {
+                throw new Error('Failed to update book');
+            }
+
+            const data = await response.json();
+            alert('Book updated successfully!');
+            console.log(data);
+        } catch (error) {
+            console.error('Error:', error.message);
+            alert('Failed to update book!');
+        }
+    });
+
+    fetchData();
+</script>
+
+</body>
+</html>

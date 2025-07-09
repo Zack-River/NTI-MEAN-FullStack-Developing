@@ -14,6 +14,7 @@
   </div>
 
   <script>
+    
     async function fetchData() {
       try {
         const response = await fetch('http://localhost:3000/book');
@@ -24,19 +25,44 @@
         bookList.innerHTML = '';
 
         for (const book of books) {
-          bookList.innerHTML += `
-            <div class="book-item">
-                <h2>${book.Name}</h2>
-                <a class="createBtn" href="main.html?code=${book.Code}">Details</a> 
-            </div>
-            `;
+          const bookItem = document.createElement('div');
+          bookItem.className = 'book-item';
+          bookItem.innerHTML = `
+            <h2>${book.Name}</h2>
+            <a class="createBtn" href="main.html?code=${book.Code}">Details</a>
+            <a href="edit.html?code=${book.Code}" class="backBtn">Edit</a>
+            <button class="backBtn deleteBtn" data-code="${book.Code}">Delete</button>
+          `;
+          bookList.appendChild(bookItem);
         }
+
       } catch (error) {
         console.error('Error:', error.message);
       }
     }
 
     fetchData();
+
+    document.addEventListener('click', async (e) => {
+  if (e.target.classList.contains('deleteBtn')) {
+    const code = e.target.getAttribute('data-code');
+    if (confirm(`Are you sure you want to delete book: ${code}?`)) {
+      try {
+        const response = await fetch(`http://localhost:3000/book/${code}`, {
+          method: 'DELETE'
+        });
+
+        if (!response.ok) throw new Error('Failed to delete');
+
+        alert('Book deleted successfully');
+        fetchData(); // refresh the list
+      } catch (err) {
+        alert('Error deleting book: ' + err.message);
+      }
+    }
+  }
+});
+
   </script>
 </body>
 </html>
