@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Books</title>
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Books</h1>
+    <div id="bookList"></div>
+    <a href="./index.html" class="createBtn">Add Book</a>
+  </div>
+
+  <script>
+    async function fetchData() {
+      try {
+        const response = await fetch('http://localhost:3000/book');
+        if (!response.ok) throw new Error('Failed to fetch data');
+
+        const books = await response.json();
+        const bookList = document.getElementById('bookList');
+        bookList.innerHTML = '';
+
+        for (const book of books) {
+          bookList.innerHTML += `
+            <div class="book-item">
+                <h2>${book.Name}</h2>
+                <a class="createBtn" href="main.html?code=${book.Code}">Details</a> 
+            </div>
+            `;
+        }
+      } catch (error) {
+        console.error('Error:', error.message);
+      }
+    }
+
+    fetchData();
+  </script>
+</body>
+</html>
