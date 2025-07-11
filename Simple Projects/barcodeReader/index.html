@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h1 class="title">Add New Book</h1>
-        <form action="http://localhost:3000/book" method="post" class="productInfo">
+        <form class="productInfo">
             <input type="text" name="Code" class="field" id="pId" placeholder="Id">
         
             <input type="text" name="Name" class="field" id="pName" placeholder="Name">
@@ -18,50 +18,81 @@
         
             <input type="text" name="Quantity" class="field" id="pQuantity" placeholder="Quantity">
             
-            <button type="submit" class="createBtn">Create</button>
+            <button class="createBtn" id="create">Create</button>
         </form>
         <a href="./home.html" class="backBtn">Back</a>
 
-
+</div>
         <script>
-           let barcode = '';
-           let timer = null;
-           let lastKeyTime = Date.now();
-           let input = document.getElementById('pId');
-            
+    let barcode = '';
+    let timer = null;
+    let lastKeyTime = Date.now();
+    let input = document.getElementById('pId');
 
-           input.addEventListener('keydown' , (event) => {
-                if (event.key === 'Enter') {
-                    event.preventDefault();
-                }
-                if(event.key.length > 1 && event.key !== 'Enter')
-                    return;
-                const currentTime = Date.now();
-                const timeDiff = currentTime - lastKeyTime;
-                lastKeyTime = currentTime;
+    input.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+        }
+        if (event.key.length > 1 && event.key !== 'Enter')
+            return;
+        const currentTime = Date.now();
+        const timeDiff = currentTime - lastKeyTime;
+        lastKeyTime = currentTime;
 
-                if(timeDiff > 100){
-                    barcode = '';
-                }
+        if (timeDiff > 100) {
+            barcode = '';
+        }
 
-                if(event.key === 'Enter'){
-                    if(barcode.length > 0){
-                        input.value = barcode;
-                        input.readOnly=true;
-                        input.style.width = "75%";
-                    }
-                    barcode = '';
-                    return;
-                }
+        if (event.key === 'Enter') {
+            if (barcode.length > 0) {
+                input.value = barcode;
+                input.readOnly = true;
+                input.style.width = "75%";
+            }
+            barcode = '';
+            return;
+        }
 
-                barcode += event.key;
+        barcode += event.key;
 
-                clearTimeout(timer);
-                timer = setTimeout(()=> {
-                    barcode = '';
-                },300);
-           });
-        </script>
-    </div>
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+            barcode = '';
+        }, 300);
+    });
+
+    // Submit form using fetch
+    const form = document.querySelector('.productInfo');
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const Code = document.getElementById('pId').value;
+        const Name = document.getElementById('pName').value;
+        const Price = document.getElementById('pPrice').value;
+        const Quantity = document.getElementById('pQuantity').value;
+
+        try {
+            const response = await fetch('http://localhost:3000/book', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ Code, Name, Price, Quantity })
+            });
+
+            if (response.ok) {
+                // Navigate after successful post
+                window.location.href = 'home.html';
+            } else {
+                const data = await response.json();
+                alert('Failed to add book: ' + (data.message || 'Unknown error'));
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('Error while adding book');
+        }
+    });
+</script>
 </body>
 </html>

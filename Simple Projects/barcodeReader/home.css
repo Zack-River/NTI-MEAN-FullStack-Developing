@@ -63,6 +63,7 @@ body {background: radial-gradient(100% 100% at var(--4-x-position) var(--4-y-pos
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 80vw;
     align-items: center;
     align-content: center;
     gap: 10px;
@@ -101,6 +102,14 @@ body {background: radial-gradient(100% 100% at var(--4-x-position) var(--4-y-pos
 
 .createBtn:hover {
     animation: pulse 1s linear infinite;
+}
+
+#addBook:hover {
+    animation: spin 1s linear infinite;
+}
+
+#addBook:focus {
+    animation: none;
 }
 
 .createBtn:active {
