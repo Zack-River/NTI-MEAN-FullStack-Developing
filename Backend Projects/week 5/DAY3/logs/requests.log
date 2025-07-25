@@ -1,0 +1,130 @@
+2025-07-19T10:30:37.470Z info: Server started on port 3000
+2025-07-19T10:30:37.481Z info: Redis connected
+2025-07-19T10:30:52.623Z info: Fetched /photos from API and cached
+2025-07-19T10:30:52.631Z info: GET /photos 200 355.777 ms - 891471
+2025-07-19T10:31:07.153Z info: Cache for 'photos' cleared
+2025-07-19T10:31:07.154Z info: GET /clear 200 1.659 ms - 13
+2025-07-19T10:31:17.684Z info: Cache for 'photos' cleared
+2025-07-19T10:31:17.687Z info: GET /clear 200 2.420 ms - 13
+2025-07-19T10:31:27.544Z info: GET /hi 404 0.925 ms - 141
+2025-07-19T10:31:54.516Z info: Server started on port 3000
+2025-07-19T10:31:54.528Z info: Redis connected
+2025-07-19T10:31:57.423Z info: Server started on port 3000
+2025-07-19T10:31:57.435Z info: Redis connected
+2025-07-19T10:31:59.258Z info: Server started on port 3000
+2025-07-19T10:31:59.270Z info: Redis connected
+2025-07-19T10:32:00.848Z info: Server started on port 3000
+2025-07-19T10:32:00.861Z info: Redis connected
+2025-07-19T10:32:03.264Z info: Server started on port 3000
+2025-07-19T10:32:03.274Z info: Redis connected
+2025-07-19T10:32:27.486Z info: Server started on port 3000
+2025-07-19T10:32:27.497Z info: Redis connected
+2025-07-19T10:32:40.598Z info: Server started on port 3000
+2025-07-19T10:32:40.612Z info: Redis connected
+2025-07-19T10:32:42.063Z info: Server started on port 3000
+2025-07-19T10:32:42.073Z info: Redis connected
+2025-07-19T10:32:43.258Z info: Server started on port 3000
+2025-07-19T10:32:43.268Z info: Redis connected
+2025-07-19T10:32:59.623Z info: Server started on port 3000
+2025-07-19T10:32:59.632Z info: Redis connected
+2025-07-19T10:33:10.088Z info: Server started on port 3000
+2025-07-19T10:33:10.099Z info: Redis connected
+2025-07-19T10:33:13.007Z info: Server started on port 3000
+2025-07-19T10:33:13.017Z info: Redis connected
+2025-07-19T10:33:14.653Z info: Server started on port 3000
+2025-07-19T10:33:14.663Z info: Redis connected
+2025-07-19T10:33:18.106Z info: Server started on port 3000
+2025-07-19T10:33:18.118Z info: Redis connected
+2025-07-19T10:33:26.753Z info: Server started on port 3000
+2025-07-19T10:33:26.766Z info: Redis connected
+2025-07-19T10:33:28.159Z info: Server started on port 3000
+2025-07-19T10:33:28.169Z info: Redis connected
+2025-07-19T10:33:29.340Z info: Server started on port 3000
+2025-07-19T10:33:29.350Z info: Redis connected
+2025-07-19T10:33:40.510Z info: Server started on port 3000
+2025-07-19T10:33:40.524Z info: Redis connected
+2025-07-19T10:33:41.678Z info: Server started on port 3000
+2025-07-19T10:33:41.689Z info: Redis connected
+2025-07-19T10:33:52.084Z info: Server started on port 3000
+2025-07-19T10:33:52.095Z info: Redis connected
+2025-07-19T10:33:55.185Z info: Server started on port 3000
+2025-07-19T10:33:55.195Z info: Redis connected
+2025-07-19T10:33:58.185Z info: Server started on port 3000
+2025-07-19T10:33:58.202Z info: Redis connected
+2025-07-19T10:34:00.532Z info: Server started on port 3000
+2025-07-19T10:34:00.542Z info: Redis connected
+2025-07-19T10:34:07.491Z info: Server started on port 3000
+2025-07-19T10:34:07.501Z info: Redis connected
+2025-07-19T10:34:08.988Z info: Server started on port 3000
+2025-07-19T10:34:08.998Z info: Redis connected
+2025-07-19T10:34:13.149Z info: Server started on port 3000
+2025-07-19T10:34:13.160Z info: Redis connected
+2025-07-19T10:34:18.035Z info: Server started on port 3000
+2025-07-19T10:34:18.045Z info: Redis connected
+2025-07-19T10:34:19.610Z info: Server started on port 3000
+2025-07-19T10:34:19.627Z info: Redis connected
+2025-07-19T10:34:21.665Z info: Server started on port 3000
+2025-07-19T10:34:21.675Z info: Redis connected
+2025-07-19T10:34:24.076Z info: Server started on port 3000
+2025-07-19T10:34:24.086Z info: Redis connected
+2025-07-19T10:34:26.357Z info: Server started on port 3000
+2025-07-19T10:34:26.367Z info: Redis connected
+2025-07-19T10:34:27.923Z info: Server started on port 3000
+2025-07-19T10:34:27.933Z info: Redis connected
+2025-07-19T10:34:30.576Z info: Server started on port 3000
+2025-07-19T10:34:30.585Z info: Redis connected
+2025-07-19T10:34:33.693Z info: Server started on port 3000
+2025-07-19T10:34:33.702Z info: Redis connected
+2025-07-19T10:34:35.884Z info: Server started on port 3000
+2025-07-19T10:34:35.899Z info: Redis connected
+2025-07-19T10:34:36.919Z info: Server started on port 3000
+2025-07-19T10:34:36.929Z info: Redis connected
+2025-07-19T10:34:40.596Z info: Server started on port 3000
+2025-07-19T10:34:40.605Z info: Redis connected
+2025-07-19T10:34:42.872Z info: Server started on port 3000
+2025-07-19T10:34:42.881Z info: Redis connected
+2025-07-19T10:34:51.810Z info: Server started on port 3000
+2025-07-19T10:34:51.818Z info: Redis connected
+2025-07-19T10:35:19.129Z info: GET /error - - ms - -
+2025-07-19T10:35:25.190Z info: GET /reject 404 1.712 ms - 145
+2025-07-19T10:36:02.100Z info: Server started on port 3000
+2025-07-19T10:36:02.113Z info: Redis connected
+2025-07-19T10:36:04.397Z info: Server started on port 3000
+2025-07-19T10:36:04.407Z info: Redis connected
+2025-07-19T10:36:13.501Z info: GET /reject 404 2.312 ms - 145
+2025-07-19T10:36:32.967Z info: Server started on port 3000
+2025-07-19T10:36:32.982Z info: Redis connected
+2025-07-19T10:36:35.309Z info: Server started on port 3000
+2025-07-19T10:36:35.318Z info: Redis connected
+2025-07-19T10:36:37.892Z error: Test error
+2025-07-19T10:36:56.426Z info: GET /error - - ms - -
+2025-07-19T10:37:18.504Z info: Server started on port 3000
+2025-07-19T10:37:18.514Z info: Redis connected
+2025-07-19T10:37:21.660Z info: Server started on port 3000
+2025-07-19T10:37:21.670Z info: Redis connected
+2025-07-19T10:37:23.313Z info: Server started on port 3000
+2025-07-19T10:37:23.323Z info: Redis connected
+2025-07-19T10:37:26.180Z info: Server started on port 3000
+2025-07-19T10:37:26.192Z info: Redis connected
+2025-07-19T10:37:28.935Z error: Test error
+2025-07-19T10:37:34.822Z info: GET /error - - ms - -
+2025-07-19T10:37:35.782Z error: unhandledRejection: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
+MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
+    at new ConnectionString (C:\Users\Zack River\Desktop\NTI\Backend Projects\week 5\DAY3\node_modules\mongodb-connection-string-url\lib\index.js:86:19)
+    at parseOptions (C:\Users\Zack River\Desktop\NTI\Backend Projects\week 5\DAY3\node_modules\mongodb\lib\connection_string.js:203:17)
+    at new MongoClient (C:\Users\Zack River\Desktop\NTI\Backend Projects\week 5\DAY3\node_modules\mongodb\lib\mongo_client.js:65:61)
+    at NativeConnection.createClient (C:\Users\Zack River\Desktop\NTI\Backend Projects\week 5\DAY3\node_modules\mongoose\lib\drivers\node-mongodb-native\connection.js:343:14)
+    at NativeConnection.openUri (C:\Users\Zack River\Desktop\NTI\Backend Projects\week 5\DAY3\node_modules\mongoose\lib\connection.js:1071:34)
+    at Mongoose.connect (C:\Users\Zack River\Desktop\NTI\Backend Projects\week 5\DAY3\node_modules\mongoose\lib\mongoose.js:450:15)
+    at C:\Users\Zack River\Desktop\NTI\Backend Projects\week 5\DAY3\server.js:63:14
+    at Layer.handleRequest (C:\Users\Zack River\Desktop\NTI\Backend Projects\week 5\DAY3\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Zack River\Desktop\NTI\Backend Projects\week 5\DAY3\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\Zack River\Desktop\NTI\Backend Projects\week 5\DAY3\node_modules\router\lib\route.js:117:3)
+2025-07-19T10:38:07.779Z info: Server started on port 3000
+2025-07-19T10:38:07.794Z info: Redis connected
+2025-07-19T10:38:12.286Z info: Server started on port 3000
+2025-07-19T10:38:12.305Z info: Redis connected
+2025-07-19T10:38:13.259Z info: Server started on port 3000
+2025-07-19T10:38:13.269Z info: Redis connected
+2025-07-19T10:38:29.489Z info: Server started on port 3000
+2025-07-19T10:38:29.502Z info: Redis connected

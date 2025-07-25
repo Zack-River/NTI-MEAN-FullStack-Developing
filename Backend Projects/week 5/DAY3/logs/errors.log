@@ -1,0 +1,14 @@
+2025-07-19T10:36:37.892Z error: Test error
+2025-07-19T10:37:28.935Z error: Test error
+2025-07-19T10:37:35.782Z error: unhandledRejection: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
+MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
+    at new ConnectionString (C:\Users\Zack River\Desktop\NTI\Backend Projects\week 5\DAY3\node_modules\mongodb-connection-string-url\lib\index.js:86:19)
+    at parseOptions (C:\Users\Zack River\Desktop\NTI\Backend Projects\week 5\DAY3\node_modules\mongodb\lib\connection_string.js:203:17)
+    at new MongoClient (C:\Users\Zack River\Desktop\NTI\Backend Projects\week 5\DAY3\node_modules\mongodb\lib\mongo_client.js:65:61)
+    at NativeConnection.createClient (C:\Users\Zack River\Desktop\NTI\Backend Projects\week 5\DAY3\node_modules\mongoose\lib\drivers\node-mongodb-native\connection.js:343:14)
+    at NativeConnection.openUri (C:\Users\Zack River\Desktop\NTI\Backend Projects\week 5\DAY3\node_modules\mongoose\lib\connection.js:1071:34)
+    at Mongoose.connect (C:\Users\Zack River\Desktop\NTI\Backend Projects\week 5\DAY3\node_modules\mongoose\lib\mongoose.js:450:15)
+    at C:\Users\Zack River\Desktop\NTI\Backend Projects\week 5\DAY3\server.js:63:14
+    at Layer.handleRequest (C:\Users\Zack River\Desktop\NTI\Backend Projects\week 5\DAY3\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Zack River\Desktop\NTI\Backend Projects\week 5\DAY3\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\Zack River\Desktop\NTI\Backend Projects\week 5\DAY3\node_modules\router\lib\route.js:117:3)
