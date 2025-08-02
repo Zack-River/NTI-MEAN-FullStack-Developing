@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        input,select,button{
+            margin: 10px;
+        }
+        p{
+            font-size: 20px;
+        }
+        #result{
+            font-size: 20px;
+            color: red;
+        }
+        #btn{
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #btn:hover{
+            background-color: #0056b3;
+        }
+        #operator{
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #operator:hover{
+            background-color: #0056b3;
+        }
+        #input1,#input2{
+            padding: 10px 20px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+        }
+        #input1{
+            margin-right: 10px;
+        }
+        #input2{
+            margin-right: 10px;
+        }
+        #operator{
+            margin-right: 10px;
+        }
+        #btn{
+            margin-right: 10px;
+        }
+        #result{
+            margin-top: 20px;
+        }
+        #input1,#input2{
+            margin-right: 10px;
+        }
+        #operator{
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    input1: <input type="number" id="input1">
+    input2: <input type="number" id="input2">
+    operator: <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <button id="btn">Calculate</button>
+    <p id="result"></p>
+    <script src="./_dist/index.js"></script>
+</body>
+</html>
