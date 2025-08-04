@@ -1,54 +1,98 @@
-# Angular 101
-## What is Angular?
-Angular is a front-end web framework that allows you to build dynamic web applications.
+# 🚀 **Angular 101 Cheat Sheet**
 
-## What is a component?
-A component is a basic building block of an Angular application.
+> Your quick-start guide to understanding **Angular** fundamentals — clear, concise & modern.
 
-## What is a service?
-A service is a class that provides functionality to components.
+---
 
-## What is a module?
-A module is a collection of components, directives, pipes, and services that are related to each other.
+## 📌 **What is Angular?**
+**Angular** is a robust front-end framework for building dynamic, interactive single-page applications (SPAs) using reusable components and powerful tooling.
 
-## What is a directive?
-A directive is a class that adds behavior to elements in the DOM.
+---
 
-## What is a pipe?
-A pipe is a function that transforms data for display in a template.
+## 🧱 **What is a Component?**
+A **component** is the core building block in Angular. It controls a part of the user interface and logic.
 
-## What is a router?
-A router is a service that allows you to navigate between different components in your application.
+---
 
-## What is a form?
-A form is a collection of form controls that allow users to enter data.
+## 🔧 **What is a Service?**
+A **service** is a reusable class that provides specific functionality (like fetching data) that can be shared across multiple components.
 
-## What is a template?
-A template is a file that defines the structure of a component.
+---
 
-## What is a style sheet?
-A style sheet is a file that defines the styles for a component.
+## 📦 **What is a Module?**
+A **module** groups related components, directives, pipes, and services into cohesive blocks of functionality.
 
-## What is a data binding?
-Data binding is a way of connecting a component to a data source.
+---
 
-## What is a two-way data binding?
-Two-way data binding is a way of connecting a component to a data source and updating the data source when the component is updated.
+## 🎯 **What is a Directive?**
+A **directive** adds custom behavior or modifies the appearance of elements in the DOM.
 
-## What is SPA?
-Single Page Application (SPA) is a web application that loads a single HTML page and updates the content of that page as the user interacts with the application.
+---
 
-## What is a RESTful API?
-RESTful API is a way of creating web services that allow you to send and receive data from a server.
+## 🔁 **What is a Pipe?**
+A **pipe** transforms data in templates — for example, formatting dates, currencies, or filtering lists.
 
-## What is a JSON?
-JSON is a data format that is used to send and receive data from a server.
+---
 
-## What is a HTTP request?
-HTTP request is a message that is sent from a client to a server to request data from the server.
+## 🗺️ **What is a Router?**
+The **router** enables navigation between components and manages the application’s views.
 
-## What is a HTTP response?
-HTTP response is a message that is sent from a server to a client to send data to the client.
+---
 
-## What is a HTTP status code?
-HTTP status code is a number that is returned by a server to indicate the status of a request.
+## ✍️ **What is a Form?**
+A **form** is a collection of controls that allow users to input, edit, and submit data.
+
+---
+
+## 🖼️ **What is a Template?**
+A **template** is the HTML view that defines the layout and structure of a component’s UI.
+
+---
+
+## 🎨 **What is a Style Sheet?**
+A **style sheet** (CSS/SCSS) defines how a component looks and feels by styling its template.
+
+---
+
+## 🔗 **What is Data Binding?**
+**Data binding** connects component logic to the template, synchronizing data between them.
+
+---
+
+## ♻️ **What is Two-Way Data Binding?**
+**Two-way binding** updates the view when data changes — and updates the data when the view changes.
+
+---
+
+## ⚡ **What is an SPA?**
+A **Single Page Application (SPA)** loads a single HTML page and dynamically updates content without full page reloads.
+
+---
+
+## 🌐 **What is a RESTful API?**
+A **RESTful API** provides an interface for communicating with a server by sending and receiving data over HTTP.
+
+---
+
+## 🗂️ **What is JSON?**
+**JSON (JavaScript Object Notation)** is a lightweight data format used to exchange data between clients and servers.
+
+---
+
+## 📤 **What is an HTTP Request?**
+An **HTTP request** is a message sent from a client to a server to retrieve or send data.
+
+---
+
+## 📥 **What is an HTTP Response?**
+An **HTTP response** is the server’s reply to an HTTP request, delivering data or status information.
+
+---
+
+## ✅ **What is an HTTP Status Code?**
+An **HTTP status code** is a numeric indicator of a request’s result (e.g., `200 OK`, `404 Not Found`).
+
+---
+
+## ✨ **Keep Building!**
+Angular is vast — but mastering these fundamentals puts you on the right path. Happy coding! 🚀
