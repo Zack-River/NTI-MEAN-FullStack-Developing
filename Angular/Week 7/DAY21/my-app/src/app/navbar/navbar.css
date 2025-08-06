@@ -1,0 +1,54 @@
+body {
+  cursor: url('../../../public/cursor.png'), auto;
+}
+
+.brand-icon {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+  color: var(--brand);
+  transition: transform 0.3s ease;
+}
+.navbar-custom {
+  background: linear-gradient(
+    90deg,
+    rgba(12, 36, 80, 1) 0%,
+    rgba(38, 82, 139, 1) 100%
+  );
+}
+.navbar-custom .navbar-brand .brand-text {
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+}
+.navbar-custom .nav-link {
+  color: rgba(255, 255, 255, 0.92);
+  margin-right: 0.4rem;
+  transition: color 0.15s;
+}
+.navbar-custom .nav-link.active,
+.navbar-custom .nav-link:hover {
+  color: #ffd27f;
+}
+.navbar-custom .btn-outline-primary {
+  color: var(--brand);
+  border-color: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.08);
+}
+.navbar-custom .btn-outline-primary:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .navbar-brand:hover .brand-icon {
+    transform: rotate(10deg) scale(1.06);
+  }
+}
+
+button {
+  cursor: url('../../../public/click.png'), auto;
+}
+
+a {
+  cursor: url('../../../public/click.png'), auto;
+}

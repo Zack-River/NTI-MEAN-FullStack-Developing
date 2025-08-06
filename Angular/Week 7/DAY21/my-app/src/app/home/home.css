@@ -1,0 +1,74 @@
+:root {
+  --brand: #ffd27f;
+  --bg: #071232;
+  --muted: rgba(255, 255, 255, 0.75);
+}
+
+body {
+  cursor: url('../../../public/cursor.png'), auto;
+}
+
+.hero {
+  min-height: 72vh;
+  background: linear-gradient(
+    180deg,
+    rgba(12, 36, 80, 0.06),
+    rgba(12, 36, 80, 0)
+  );
+  display: block;
+  padding-top: 3.5rem;
+}
+.hero-text h1 {
+  color: #0b1a3a;
+  font-weight: 800;
+}
+.hero-text .lead {
+  color: #364b7a;
+}
+.hero-visual .mockup-card {
+  background: linear-gradient(180deg, #ffffff, #f6f9ff);
+  border-radius: 0.9rem;
+  padding: 1rem;
+}
+.mockup-header {
+  font-weight: 700;
+  padding: 0.6rem 0.9rem;
+  border-radius: 0.6rem;
+  background: linear-gradient(90deg, #263e80, #3056a8);
+  color: white;
+  margin-bottom: 0.7rem;
+}
+.mockup-body {
+  padding: 0.6rem;
+}
+.chip {
+  height: 36px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #ffdd9c, #ffd27f);
+}
+.chip.short {
+  width: 60%;
+}
+.chart {
+  height: 90px;
+  background: linear-gradient(90deg, #dce8ff, #eff6ff);
+  border-radius: 8px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.features h5 {
+  font-weight: 700;
+}
+.features p {
+  color: #556787;
+}
+
+@media (max-width: 991px) {
+  .hero-text {
+    text-align: center;
+  }
+  .hero-visual {
+    display: flex;
+    justify-content: center;
+  }
+}

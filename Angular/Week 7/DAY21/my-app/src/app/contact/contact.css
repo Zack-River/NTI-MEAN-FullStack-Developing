@@ -1,0 +1,33 @@
+.contact-section h2 {
+  font-weight: 700;
+  color: #0b1a3a;
+}
+.contact-section .form-control {
+  border-radius: 0.6rem;
+  padding: 0.6rem 0.75rem;
+}
+.info-card {
+  background: #f9fbff;
+}
+button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+button:hover {
+  cursor: url('../../../public/click.png'), auto;
+}
+
+input {
+  cursor: url('../../../public/text-box.png'), auto;
+
+}
+
+textarea {
+  cursor: url('../../../public/text-box.png'), auto;
+}
+
+body {
+  cursor: url('../../../public/cursor.png'), auto;
+}
+

@@ -1,0 +1,18 @@
+<h2 [ngClass]="bgDark" [ngStyle]="tagStyle">{{ username }}</h2>
+<h3>{{ title }}</h3>
+
+<button
+  [disabled]="isDisabled"
+  (click)="sayHello()"
+  type="button"
+>
+  Click me
+</button>
+
+<input
+  class="d-block"
+  type="text"
+  placeholder="Type something..."
+  (click)="sayHello($event)"
+  [attr.data-user]="username"
+/>

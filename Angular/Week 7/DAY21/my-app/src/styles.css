@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  cursor: url('../public/cursor.png'), auto;
+}
+
+form {
+  cursor: url('../public/click.png');
+}
+
+button {
+  cursor: url('../public/click.png'), auto;
+
+}
+
+button:hover {
+  cursor: url('../public/click.png'), auto;
+}
+
+button:active {
+  cursor: url('../public/click.png'), auto;
+}
+
+button:focus {
+  cursor: url('../public/click.png'), auto;
+}
+

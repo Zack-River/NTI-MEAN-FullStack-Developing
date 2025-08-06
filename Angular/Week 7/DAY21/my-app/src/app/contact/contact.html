@@ -1,0 +1,50 @@
+<section class="contact-section py-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Contact Form -->
+      <div class="col-lg-6">
+        <h2 class="mb-4">Get in touch</h2>
+        <p class="text-muted mb-4">Have a question or feedback? Fill out the form below and we'll get back to you soon.</p>
+
+        <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+          <div class="mb-3">
+            <label for="name" class="form-label fw-semibold">Name</label>
+            <input type="text" id="name" name="name" class="form-control" ngModel required>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label fw-semibold">Email</label>
+            <input type="email" id="email" name="email" class="form-control" ngModel required>
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label fw-semibold">Message</label>
+            <textarea id="message" name="message" class="form-control" rows="4" ngModel required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg px-4" [disabled]="!contactForm.valid">Send</button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-lg-6">
+        <div class="info-card shadow-sm p-4 rounded">
+          <h5>Contact Information</h5>
+          <p class="text-muted">We’d love to hear from you. Reach us through any of these channels.</p>
+          <ul class="list-unstyled">
+            <li class="mb-2"><strong>Email:</strong> support.com</li>
+            <li class="mb-2"><strong>Phone:</strong> +1 (555) 123-4567</li>
+            <li><strong>Address:</strong> 123 Main St, New York, NY</li>
+          </ul>
+        </div>
+
+        <!-- Map Embed Placeholder -->
+        <div class="mt-4 ratio ratio-16x9 shadow-sm rounded overflow-hidden">
+          <iframe src="https://maps.google.com/maps?q=New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
