@@ -1,0 +1,56 @@
+<!-- Search filter -->
+<div class="navbar">
+  <input
+  [(ngModel)]="filterKeyword"
+  placeholder="Search product title..."
+  class="form-control mb-3"
+/>
+</div>
+
+<div class="cards">
+  <!-- Product list -->
+  @for (product of products; track product.id) { @if
+  (product.title.toLowerCase().includes(filterKeyword.toLowerCase())) {
+  <div class="card" [class.highlight]="product.isFeatured">
+    <!-- Product image -->
+    <h5 class="card-title">
+      {{ product.title }}
+      @if (product.isFeatured) {
+      <span>🌟 Featured</span>
+      }
+    </h5>
+    <img [src]="product.image" class="card-img" alt="{{ product.title }}" />
+
+    <div class="card-body">
+      <!-- Title and featured badge -->
+
+      <!-- Price -->
+      <p class="card-price">Price: ${{ product.price }}</p>
+
+      <!-- Rating -->
+      <p class="card-text">
+        Rating:
+        <span [style.color]="getColor(product.rating.rate)">
+          {{ product.rating.rate }} ({{ product.rating.count }} reviews)
+        </span>
+      </p>
+
+      <!-- Category -->
+      @switch (product.category) { @case ("men's clothing") {
+      <p class="card-category">This is men's clothing</p>
+      } @case ("women's clothing") {
+      <p class="card-category">This is women's clothing</p>
+      } @case ("jewelery") {
+      <p class="card-category">This is an accessory</p>
+      } @case ("electronics") {
+      <p class="card-category">This is an electronic product</p>
+      } @default {
+      <p class="card-category">Unknown category</p>
+      } }
+
+      <!-- Button -->
+      <a href="#" class="details-btn">View Details</a>
+    </div>
+  </div>
+  } }
+</div>
